@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="25">
+
+    <shortcut
+        android:shortcutId="explore"
+        android:enabled="true"
+        android:icon="@drawable/ic_explore"
+        android:shortcutShortLabel="@string/explore"
+        android:shortcutLongLabel="@string/explore"
+        android:shortcutDisabledMessage="@string/explore">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.kl.appshortcut"
+            android:targetClass="com.kl.appshortcut.MainActivity">
+            <!-- <extra
+                 android:name="key"
+                 android:value="value"/>-->
+            <!-- If your shortcut is associated with multiple intents, include them
+                 here. The last intent in the list determines what the user sees when
+                 they launch this shortcut. -->
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="maskup"
+        android:enabled="true"
+        android:icon="@drawable/ic_masks"
+        android:shortcutShortLabel="@string/maskup"
+        android:shortcutLongLabel="@string/maskup"
+        android:shortcutDisabledMessage= "@string/maskup">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.kl.appshortcut"
+            android:targetClass="com.kl.appshortcut.MainActivity2">
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="store"
+        android:enabled="true"
+        android:icon="@drawable/ic_store"
+        android:shortcutShortLabel="@string/store"
+        android:shortcutLongLabel="@string/store"
+        android:shortcutDisabledMessage="@string/store">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.kl.appshortcut"
+            android:targetClass="com.kl.appshortcut.MainActivity3">
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>
